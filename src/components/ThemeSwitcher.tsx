@@ -9,9 +9,14 @@ const ThemeSwitcher = () => {
   const ThemeIcon = isDark ? MoonIcon : SunIcon;
 
   return (
-    <div onClick={toggleMode}>
-      <span>{isDark ? "Dark" : "Liegt"}</span>
-      <ThemeIcon />
+    <div
+      className="flex items-center gap-4 cursor-pointer"
+      onClick={toggleMode}
+    >
+      <span className=" text-custom-gray-100 dark:text-white hover:text-custom-gray-300 dark:hover:text-custom-gray-100">
+        {isDark ? "Dark" : "Liegt"}
+      </span>
+      <ThemeIcon className=" fill-custom-gray-100 dark:fill-white" />
     </div>
   );
 };
