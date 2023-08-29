@@ -1,6 +1,9 @@
+import ThemeSwitcher from "./components/ThemeSwitcher";
+
 function App() {
   return (
-    <div >
+    <div>
+      <ThemeSwitcher/>
     </div>
   );
 }
