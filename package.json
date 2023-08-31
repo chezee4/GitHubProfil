@@ -1,7 +1,7 @@
 {
   "name": "githubprofil",
   "version": "0.1.0",
-  "homepage": "https://chezee4.github.io/githubprofil",
+  "homepage": "https://chezee4.github.io/GitHubProfil",
   "private": true,
   "dependencies": {
     "@types/jest": "^27.5.2",
