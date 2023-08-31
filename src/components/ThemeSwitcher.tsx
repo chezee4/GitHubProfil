@@ -1,4 +1,6 @@
 import { useContext } from "react";
+import {motion} from "framer-motion";
+
 import { DarkModes } from "../utils/context";
 import { ReactComponent as MoonIcon } from "../assets/icon-moon.svg";
 import { ReactComponent as SunIcon } from "../assets/icon-sun.svg";
@@ -9,7 +11,12 @@ const ThemeSwitcher = () => {
   const ThemeIcon = isDark ? MoonIcon : SunIcon;
 
   return (
-    <div
+    <motion.div
+    animate={{
+      x: [70, 0],
+      opacity: [0, 1],
+      transition: { duration: 1 },
+    }}
       className="flex items-center gap-4 cursor-pointer"
       onClick={toggleMode}
     >
@@ -17,7 +24,7 @@ const ThemeSwitcher = () => {
         {isDark ? "Dark" : "Liegt"}
       </span>
       <ThemeIcon className=" fill-custom-gray-100 dark:fill-white" />
-    </div>
+    </motion.div>
   );
 };
 

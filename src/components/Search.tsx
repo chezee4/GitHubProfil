@@ -1,3 +1,4 @@
+import {motion} from "framer-motion";
 import { ReactComponent as SearchIcon } from "../assets/icon-search.svg";
 import { Button } from "../UI/Button";
 
@@ -26,7 +27,12 @@ const Search = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} autoComplete="off">
+    <motion.form
+    animate={{
+      y: [-50, 0],
+      opacity: [0, 1],
+      transition: { duration: 1 },
+    }} onSubmit={handleSubmit} autoComplete="off">
       <div className="relative w-full overflow-hidden p-3 pl-4 md:pl-7 bg-white dark:bg-custom-gray-400 flex items-center rounded-2xl shadow-custom-shadow-md dark:shadow-none  ">
         <label htmlFor="search" className="cursor-pointer">
           <SearchIcon />
@@ -45,7 +51,7 @@ const Search = () => {
         )}
         <Button>Search</Button>
       </div>
-    </form>
+    </motion.form>
   );
 };
 

@@ -5,14 +5,23 @@ import UserTitle from "./UserTitle";
 import { useContext } from "react";
 import { UserContext } from "../utils/context";
 
+import { motion } from "framer-motion";
+
 const UserCard = () => {
   const UserValue = useContext(UserContext);
   const { user } = UserValue || {};
 
   if (!user) return <></>;
-  
+
   return (
-    <div className="mt-[1.5rem] mb-[3rem] w-full pt-[30px] rounded-xl px-[24px] pb-[40px] bg-white dark:bg-custom-gray-400 flex  gap-y-[25px] gap-x-5 shadow-custom-shadow-md dark:shadow-none">
+    <motion.div
+      animate={{
+        y: [-50, 0],
+        opacity: [0, 1],
+        transition: { duration: 0.8, delay: 0.1 },
+      }}
+      className="mt-[1.5rem] mb-[3rem] w-full pt-[30px] rounded-xl px-[24px] pb-[40px] bg-white dark:bg-custom-gray-400 flex  gap-y-[25px] gap-x-5 shadow-custom-shadow-md dark:shadow-none"
+    >
       <div className=" w-[30%]">
         <img
           src={user?.avatar}
@@ -30,7 +39,7 @@ const UserCard = () => {
         <UserStat user={user!} />
         <UserInfo user={user!} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
