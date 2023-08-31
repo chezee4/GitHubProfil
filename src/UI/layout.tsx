@@ -5,7 +5,7 @@ interface ContainerProps {
 }
 
 export const Container = ({ children }: ContainerProps) => (
-  <div className=" md:w-full md:py-6  max-w-[730px] m-auto">
+  <div className=" md:w-full md:pt-6  max-w-[730px] m-auto">
     {children}
   </div>
 );

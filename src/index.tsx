@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./global.css";
-import DarkModeProvider from "./utils/context/box";
+import DarkModeProvider from "./utils/context/DarkModeContext";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
