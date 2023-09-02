@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/GitHubProfil/static/css/main.8a4f30a0.css",
-    "main.js": "/GitHubProfil/static/js/main.c0381c2c.js",
+    "main.css": "/GitHubProfil/static/css/main.446e2ec8.css",
+    "main.js": "/GitHubProfil/static/js/main.c577f701.js",
     "static/media/icon-sun.svg": "/GitHubProfil/static/media/icon-sun.c3177fa453380a8147df081ec10c2789.svg",
     "static/media/icon-website.svg": "/GitHubProfil/static/media/icon-website.cf4904e442232792159e0e1bd2d500aa.svg",
     "static/media/icon-company.svg": "/GitHubProfil/static/media/icon-company.6331bb91a37d52462978487317f0c6e9.svg",
@@ -10,11 +10,11 @@
     "static/media/icon-moon.svg": "/GitHubProfil/static/media/icon-moon.f5076b814caae9443a0b8ee24682ed13.svg",
     "static/media/icon-search.svg": "/GitHubProfil/static/media/icon-search.0cc0c98424cc75d5e1dfbb9e3abb6785.svg",
     "static/media/icon-location.svg": "/GitHubProfil/static/media/icon-location.f6d18983ab4be8b3314d51c208fba4d4.svg",
-    "main.8a4f30a0.css.map": "/GitHubProfil/static/css/main.8a4f30a0.css.map",
-    "main.c0381c2c.js.map": "/GitHubProfil/static/js/main.c0381c2c.js.map"
+    "main.446e2ec8.css.map": "/GitHubProfil/static/css/main.446e2ec8.css.map",
+    "main.c577f701.js.map": "/GitHubProfil/static/js/main.c577f701.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a4f30a0.css",
-    "static/js/main.c0381c2c.js"
+    "static/css/main.446e2ec8.css",
+    "static/js/main.c577f701.js"
   ]
 }
