@@ -17,15 +17,15 @@ const ThemeSwitcher = () => {
       opacity: [0, 1],
       transition: { duration: 1 },
     }}
-      className="flex items-center gap-4 cursor-pointer"
+      className="flex items-center gap-4 cursor-pointer group"
       onClick={toggleMode}
     >
-      <span className=" text-custom-gray-100 dark:text-white hover:text-custom-gray-300 dark:hover:text-custom-gray-100">
-        {isDark ? "Dark" : "Liegt"}
+      <span className=" text-custom-gray-100 transition-all duration-200 ease-linear dark:text-white group-hover:text-custom-gray-500 dark:group-hover:text-custom-gray-200">
+        {isDark ? "Dark" : "Leight"}
       </span>
-      <ThemeIcon className=" fill-custom-gray-100 dark:fill-white" />
+      <ThemeIcon className=" fill-custom-gray-100 transition-all duration-200 ease-linear group-hover:fill-custom-gray-400 dark:fill-white dark:group-hover:fill-custom-gray-100" />
     </motion.div>
   );
-};
+}; 
 
 export default ThemeSwitcher;

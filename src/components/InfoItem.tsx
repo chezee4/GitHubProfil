@@ -14,7 +14,7 @@ const InfoItem = ({ icon, isLink, text }: InfoItemProps) => {
   }
 
   return (
-    <li className=" text-custom-gray-200 dark:text-white text-[0.85rem] leading-normal flex items-center gap-3 w-max">
+    <li className=" text-custom-gray-200 dark:text-white text-[0.85rem] leading-normal flex items-center gap-3 w-max cursor-pointer">
       <div>{icon}</div>
       <div>
         {isLink && text ? (

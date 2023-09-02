@@ -16,7 +16,7 @@ const Header: FC = () => (
       x: [-70, 0],
       opacity: [0, 1],
       transition: { duration: 1 },
-    }} className="text-custom-gray-300 dark:text-white text-2xl leading-normal font-bold">
+    }} className="text-custom-gray-300 dark:text-white text-2xl leading-normal font-bold tracking-wider">
       devfinder
     </motion.div>
     <ThemeSwitcher />
