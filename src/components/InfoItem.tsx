@@ -1,3 +1,4 @@
+import { motion, useAnimation } from "framer-motion";
 
 export interface InfoItemProps {
   icon: React.ReactNode;
@@ -12,10 +13,23 @@ const InfoItem = ({ icon, isLink, text }: InfoItemProps) => {
   if (isLink) {
     currentHref = text && text.startsWith("http") ? text : `https://${text}`;
   }
+  const controls = useAnimation();
+
+  const handleMouseEnter = () => {
+    controls.start({ x: [0, -2, 2, -2, 2, 0], transition: { duration: 0.7 } }); // Здесь вы можете настроить анимацию внутреннего элемента
+  };
+
+  const handleMouseLeave = () => {
+    controls.start({ x: 0 });
+  };
 
   return (
-    <li className=" text-custom-gray-200 dark:text-white text-[0.85rem] leading-normal flex items-center gap-3 w-max cursor-pointer">
-      <div>{icon}</div>
+    <motion.li
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className=" text-custom-gray-200 dark:text-white text-[0.85rem] leading-normal flex items-center gap-3 w-full cursor-pointer "
+    >
+      <motion.div animate={controls}>{icon}</motion.div>
       <div>
         {isLink && text ? (
           <a
@@ -30,7 +44,7 @@ const InfoItem = ({ icon, isLink, text }: InfoItemProps) => {
           currentText
         )}
       </div>
-    </li>
+    </motion.li>
   );
 };
 
