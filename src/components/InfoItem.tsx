@@ -11,7 +11,7 @@ const InfoItem = ({ icon, isLink, text }: InfoItemProps) => {
   let currentHref = "";
 
   if (isLink) {
-    currentHref = text && text.startsWith("http") ? text : `https://${text}`;
+    currentHref = text?.startsWith("http") ? text : `https://${text}`;
   }
   const controls = useAnimation();
 
